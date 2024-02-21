@@ -15,7 +15,6 @@ variable_range <- range(ames$FinishedBsmtArea (sf))
 
 print(variable_range)
 
-
 ```
 
 # Lab report #1
