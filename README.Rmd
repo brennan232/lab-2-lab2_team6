@@ -10,10 +10,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 library(classdata)
 str(ames)
+head(ames)
 
-variable_range <- range(ames$FinishedBsmtArea (sf))
 
-print(variable_range)
 
 ```
 
@@ -50,8 +49,20 @@ there are 16 variables in the ames data set. the majority of the variables are c
 
 2. some variabes of special interest would be sale price 
 
-*Question 4*
-I pick FinishedBsmtArea (sf).
+*Question 4: Luke*
+```{r}
+load(classdata)
+max(ames$`LotArea(sf)`, na.rm = TRUE)
+min(ames$`LotArea(sf)`, na.rm = TRUE)
+
+ggplot(ames, aes(x = 'LotArea(sf)')) +
+  geom_histogram(binwidth = 100, fill = "lightblue", color = "black", alpha = 0.7) +
+  labs(title = "Histogram of LotArea", x = "LotArea", y = "Frequency")
+
+
+```
+
+I pick FinishedBsmtArea (sf).Range is 523228. 
 
 Follow the instructions posted at https://ds202-at-isu.github.io/labs.html for the lab assignment. The work is meant to be finished during the lab time, but you have time until Monday evening to polish things.
 
