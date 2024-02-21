@@ -51,3 +51,8 @@ ames
 
 2. some variabes of special interest would be sale price compared to total living space or number of bedrooms
 
+```{r}
+max(ames$`Sale Price`, na.rm = FALSE)
+min(ames$`Sale Price`, na.rm = FALSE)
+```
+
