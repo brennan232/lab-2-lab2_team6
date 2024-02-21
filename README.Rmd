@@ -51,8 +51,21 @@ ames
 
 2. some variabes of special interest would be sale price compared to total living space or number of bedrooms
 
+
+3
+
 ```{r}
 max(ames$`Sale Price`, na.rm = FALSE)
 min(ames$`Sale Price`, na.rm = FALSE)
 ```
+```{r}
+library("ggplot2")
+```
+
+```{r}
+ggplot(ames, aes(x = `Sale Price`)) +
+  geom_histogram()
+```
+
+
 
