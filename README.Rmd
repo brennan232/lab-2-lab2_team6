@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 library(classdata)
 str(ames)
+
+
 ```
 
 # Lab report #1
@@ -39,15 +41,3 @@ Include your answers in this document (Rmd file). Make sure that it knits proper
 
 All submissions to the github repo will be automatically uploaded for grading once the due date is passed.
 Submit a link to your repository on Canvas (only one submission per team) to signal to the instructors that you are done with your submission.
-
-
-Amanda 
-```{r}
-library("classdata")
-ames
-```
-1. there are 16 variables in the ames data set. the majority of the variables are characters. there are some variables that are dates or years, and there are also some numberical variables.
-
-
-2. some variabes of special interest would be sale price compared to total living space or number of bedrooms
-
