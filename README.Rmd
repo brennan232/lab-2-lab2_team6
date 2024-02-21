@@ -24,8 +24,8 @@ Amanda
 library("classdata")
 ames
 ```
-there are 16 variables in the ames data set. the majority of the variables are characters. there are some variables that are dates or years, and there are also some numberical variables.
+1. there are 16 variables in the ames data set. the majority of the variables are characters. there are some variables that are dates or years, and there are also some numberical variables.
 
 
-2. some variabes of special interest would be sale price 
+2. some variabes of special interest would be sale price compared to total living space or number of bedrooms
 
