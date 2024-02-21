@@ -41,6 +41,7 @@ Include your answers in this document (Rmd file). Make sure that it knits proper
 
 ```{r}
 head(ames)
+str(ames)
 ```
 
 
