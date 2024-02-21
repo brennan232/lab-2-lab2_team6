@@ -11,6 +11,10 @@ knitr::opts_chunk$set(echo = TRUE)
 library(classdata)
 str(ames)
 
+variable_range <- range(ames$FinishedBsmtArea (sf))
+
+print(variable_range)
+
 
 ```
 
@@ -34,6 +38,21 @@ LotArea; type num, showing square footage of lot
 AC; type chr, showing whether it has AC or not
 Fireplace; type chr, showing whether it has a fireplace or not
 Neighborhood; type Factor, showing what type of neighborhood it is located in
+
+
+
+Amanda 
+```{r}
+library("classdata")
+ames
+```
+there are 16 variables in the ames data set. the majority of the variables are characters. there are some variables that are dates or years, and there are also some numberical variables.
+
+
+2. some variabes of special interest would be sale price 
+
+*Question 4*
+I pick FinishedBsmtArea (sf).
 
 Follow the instructions posted at https://ds202-at-isu.github.io/labs.html for the lab assignment. The work is meant to be finished during the lab time, but you have time until Monday evening to polish things.
 
