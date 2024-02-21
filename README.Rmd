@@ -68,4 +68,12 @@ ggplot(ames, aes(x = `Sale Price`)) +
 ```
 
 
+4. num of bedrooms compared to sales price
+
+```{r}
+ggplot(ames, aes(x = `Sale Price`, y = Bedrooms)) +
+  geom_point()
+```
+
+
 
