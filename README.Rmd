@@ -7,9 +7,31 @@ output: github_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(classdata)
+str(ames)
 ```
 
 # Lab report #1
+
+*Question 1:*
+Variables
+Parcel ID; type chr, showing an id number for each observation
+Address; type chr, showing address of each sold house
+Style; type factor, showing architectural type of each sold house
+Occupancy; type factor, showing the occupancy type of each house (i.e., condo, townhome, etc.)
+Sale Date; type date, showing date of sale
+Sale Price; type num, showing price of each sale
+Multi sale; type chr, showing whether or not it was a multi sale
+YearBuilt; type num, showing year it was built
+Acres; type num, showing acreage of lot sold
+TotalLivingArea; type num, showing total square footage of house sold
+Bedrooms; type num, showing number of bedrooms
+FinishedBsmtArea; type num, showing square footage of finished basement
+LotArea; type num, showing square footage of lot
+AC; type chr, showing whether it has AC or not
+Fireplace; type chr, showing whether it has a fireplace or not
+Neighborhood; type Factor, showing what type of neighborhood it is located in
 
 Follow the instructions posted at https://ds202-at-isu.github.io/labs.html for the lab assignment. The work is meant to be finished during the lab time, but you have time until Monday evening to polish things.
 
