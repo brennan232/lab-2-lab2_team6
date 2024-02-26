@@ -49,6 +49,7 @@ there are 16 variables in the ames data set. the majority of the variables are c
 
 2. some variabes of special interest would be sale price 
 
+<<<<<<< HEAD
 *Question 4: Luke*
 ```{r}
 load(classdata)
@@ -63,6 +64,38 @@ ggplot(ames, aes(x = 'LotArea(sf)')) +
 ```
 
 I pick FinishedBsmtArea (sf).Range is 523228. 
+=======
+<<<<<<< HEAD
+
+3
+
+```{r}
+max(ames$`Sale Price`, na.rm = FALSE)
+min(ames$`Sale Price`, na.rm = FALSE)
+```
+```{r}
+library("ggplot2")
+```
+
+```{r}
+ggplot(ames, aes(x = `Sale Price`)) +
+  geom_histogram()
+```
+
+
+4. num of bedrooms compared to sales price
+
+```{r}
+ggplot(ames, aes(x = `Sale Price`, y = Bedrooms)) +
+  geom_point()
+```
+
+
+
+=======
+*Question 4*
+I pick FinishedBsmtArea (sf).
+>>>>>>> dd9653176060a42b64d9595d78bd65ab7748d950
 
 Follow the instructions posted at https://ds202-at-isu.github.io/labs.html for the lab assignment. The work is meant to be finished during the lab time, but you have time until Monday evening to polish things.
 
@@ -76,3 +109,4 @@ str(ames)
 
 All submissions to the github repo will be automatically uploaded for grading once the due date is passed.
 Submit a link to your repository on Canvas (only one submission per team) to signal to the instructors that you are done with your submission.
+>>>>>>> 9ee19a35c49ba4e60f8824c826ddcb260a3d90a5
